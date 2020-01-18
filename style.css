@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 80%;
+    margin: auto;
+    background-color: #e0e0e0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.naglowek {
+    text-align: center;
+    width: 60%;
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 3% 5% 3% 5%;
+
+}
+
+
+header {
+    height: 80vh;
+    background-color: #4d2c99;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    
+
+}
+
+header p {
+    
+    font-size: 1em;
+}
+
+#powitanie {
+    font-size: 1.5em;
+}
+
+header h1 {
+    margin-top: 3%;
+
+}
+
+header button {
+
+    padding: 3% 5%;
+    margin-top: 5%;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    border: 2px solid white;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+
+}
+
+a:hover{
+    color:#4d2c99;
+    background-color: white;
+} 
+
+.mojeprofilowe {
+    width: 30%;
+    float: left;
+    
+}
+
+header div img {
+    width: 80%;
+    border-radius: 20%;
+    float:left;
+    margin-top: 30%;
+    
+}
+
+
+.portfolio {
+    background-color: white;
+
+}
+
+.portfolio h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 2%;
+    
+}
+
+.portfolio p {
+    font-size: 16px;
+}
+    
+.portfolio .project{
+    margin-bottom: 3%;
+}
+.portfolio .project:nth-of-type(odd) {
+        background-color: #297ca0;
+}
+      
+.portfolio .project:nth-of-type(even) {
+        background-color: #f69314;
+}
+
+#projekty{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%; 
+}
+
+.picture img{
+    border-radius: 0;
+    float: left;
+    width: 50%;
+    display:block;
+}
+
+.name{
+    width: 50%;
+    float: left;
+    padding: 0 3% 0 3%;
+}
+
+
+
+@media (orientation:portrait){
+    header {
+        height: 95vh;
+    }
+    .naglowek {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding: 3% 5% 3% 5%;
+    }
+
+    .mojeprofilowe{
+        float: none;
+        width:65%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5% 5% 3% 5%;
+      
+    }
+
+   
+   
+    .name{
+        float: none;
+        width: 100%;
+    }
+
+    
+   
+    .picture img{
+        width: 100%;
+    }
+    
+}
+
+
+/* sekcja hobby */
+
+#hobby{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+}
+
+.photohobby{
+    width:50%;
+    height:40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float:left;
+    transition: 0.5s;
+}
+
+.photohobby:hover{
+    background-size: 120% ;
+}
+
+.photohobby:nth-of-type(1){
+   background-image: url(images/western-tatras-2690975_640.jpg);
+}
+
+.photohobby:nth-of-type(2){
+    background-image: url("images/pen-631321_640.jpg");
+ }
+
+ .photohobby:nth-of-type(3){
+    background-image: url("images/kitten-1285341_640.jpg");
+ }
+ 
+ .photohobby:nth-of-type(4){
+    background-image: url("images/phone-1052023_640.jpg");
+ }
+
+
+.photohobby h4{
+    text-align: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 40vh;
+    font-size: 1em;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.photohobby:hover h4{
+    opacity:1;
+}
+
+@media(orientation:portrait){
+    .photohobby{
+        height: 20vh;
+    }
+    .photohobby h3{
+        margin-top: 22%;
+    }
+}
+
+.formularz h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+}
+
+
+
+.wrap {
+    max-width: 90%;
+    margin: 0 auto;
+       
+}
+
+.contact,.icons{
+    float:left;
+    padding: 3%;
+    
+   
+}
+
+.contact{
+    width: 45%;
+}
+
+.icons{
+    width: 55%;
+}
+
+.icon{
+    padding: 0 2% 2% 0;
+}
+
+.icon img{
+    float:left;
+    
+}
+
+.icon span{
+    line-height: 72px;
+    padding: 3%;
+}
+
+.contact input, .contact textarea, .contact button{
+    width: 100%;
+    margin-bottom: 1%;
+    font-size: 12px;
+}
+
+.contact textarea{
+    height: 224px;
+}
+
+.contact button{
+    font-size: 14px;
+    line-height: 20px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+footer{
+    padding: 3%;
+    text-align: center;
+    background-color: #4d2c99;
+    
+   
+}
